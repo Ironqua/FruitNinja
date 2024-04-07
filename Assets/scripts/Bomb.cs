@@ -9,14 +9,14 @@ public class Bomb : MonoBehaviour
    
     Rigidbody2D rb;
     public float speed = 5f;
-    // Start is called before the first frame update
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce(Vector3.up * speed, ForceMode2D.Impulse);
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         
